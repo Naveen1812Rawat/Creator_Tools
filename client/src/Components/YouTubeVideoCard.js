@@ -18,7 +18,7 @@ const YouTubeVideoCard = ({ videoUrl }) => {
   useEffect(() => {
     const fetchVideoData = async () => {
       try {
-        const response = await axios.post(`http://127.0.0.1:8000/download/?url=${videoUrl}`);
+        const response = await axios.post(`https://creator-tools.onrender.com/download/?url=${videoUrl}`);
         const data = response.data;
 
         // Extract videoId from the videoUrl
